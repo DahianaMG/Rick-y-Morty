@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 const getDashboardData = async () => {
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_URL}/api/dashboard`
+        `https://rickandmortyapi.com/api/character`
       );
       const data = await response.json();
       return data;
