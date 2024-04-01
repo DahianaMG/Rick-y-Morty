@@ -5,10 +5,10 @@ import { FaHome } from "react-icons/fa";
 const getDashboardData = async () => {
     try {
       const response = await fetch(
-        `https://rickandmortyapi.com/api/character`
+        "https://rickandmortyapi.com/api/character"
       );
       const data = await response.json();
-      return data;
+      return data.results;
       
     } catch (error) {
       console.error(error);
@@ -18,7 +18,7 @@ const getDashboardData = async () => {
   };
   
   export default async function DashboardPage() {
-    const { data } = await getDashboardData();
+    const data = await getDashboardData();
     const num = 2;
     
     return (
