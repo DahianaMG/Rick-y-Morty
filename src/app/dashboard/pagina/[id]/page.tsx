@@ -26,7 +26,7 @@ export default async function Pagina({ params }: any) {
         </div>
       <div className="items-center justify-center flex flex-col gap-4">
 
-        <div className="flex items-center justify-center gap-y-8 gap-x-2 flex-wrap p-3">
+        <div className="grid grid-cols-2 grid-flow-row sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 flex items-center justify-center gap-y-8 gap-x-2 flex-wrap p-3">
           {data.map((personaje: any) => (
             <PersonajeCard personaje={personaje} numero={numero} key={data.name} />
             ))}
