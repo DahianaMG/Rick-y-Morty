@@ -9,7 +9,7 @@ return(
   <div className="flex items-center">
   <button
   key={num}
-  className="px-5 mx-1 bg-transparent flex items-center p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}
+  className="cursor-portal px-5 mx-1 bg-transparent flex items-center p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}
   onClick={() => {
     if (numero == 3)
     router.push(`/dashboard`);
@@ -22,7 +22,7 @@ return(
 </button>
 <button 
 key={num}
-className="px-5 mx-1 bg-transparent flex items-center p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}
+className="cursor-portal px-5 mx-1 bg-transparent flex items-center p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}
   onClick={() => {
     if (num == 2)
       router.push(`/dashboard/pagina/${num}`);

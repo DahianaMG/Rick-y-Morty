@@ -9,7 +9,7 @@ export const PersonajeCard = ({ personaje }: any) => {
   return (
     <div
       key={personaje.name}
-      className="bg-transparent flex flex-col items-center gap-2 w-25 sm:w-52 md:w-52 lg:w-52 rounded p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}
+      className="bg-transparent cursor-portal flex flex-col items-center gap-2 w-25 sm:w-52 md:w-52 lg:w-52 rounded p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}
       onClick={() => {
         router.push(`/dashboard/personaje/${personaje.id}`);
       }}

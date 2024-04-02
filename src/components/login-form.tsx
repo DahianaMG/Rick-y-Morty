@@ -39,7 +39,7 @@ export const LoginForm = () => {
         type="text"
         name="user"
         placeholder="Usuario"
-        className="text-white bg-transparent placeholder:text-white focus:outline-none w-full"
+        className="cursor-diosa text-white bg-transparent placeholder:text-white focus:outline-none w-full"
       />
       </div>
 
@@ -49,12 +49,12 @@ export const LoginForm = () => {
         type="password"
         name="password"
         placeholder="Clave"
-        className="text-white bg-transparent placeholder:text-white focus:outline-none w-full"
+        className="cursor-diosa text-white bg-transparent placeholder:text-white focus:outline-none w-full"
       />
       </div>
 
       <button
-        className="p-2 bg-secondary text-white rounded-lg shadow-lg"
+        className="cursor-portal p-2 bg-secondary text-white rounded-lg shadow-lg"
         type="submit"
       >
         Ingresar

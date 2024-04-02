@@ -21,13 +21,13 @@ export default async function PersonajePorIdPage({ params }: any) {
     atras = `/dashboard/pagina/${pagina}`;
 
   return (
-    <div className='bg-fondo2 bg-cover bg-center flex flex-col justify-items-stretch min-h-screen'>
+    <div className='cursor-oblea bg-fondo2 bg-cover bg-center flex flex-col justify-items-stretch min-h-screen'>
     <div className="flex flex-col gap-4 w-full justify-center items-center">
       <div className='grid grid-cols-3 pt-2 pb-4 w-full'>
         <div></div>
         <div></div>
         <div className='flex items-center justify-center text-4xl text-lime '>
-        <a href="/dashboard"><FaHome className='drop-shadow-s1'/></a></div>
+        <a href="/dashboard" className='cursor-portal'><FaHome className='drop-shadow-s1'/></a></div>
       </div>
       
       <div className="bg-transparent flex flex-col items-center gap-2 w-300 rounded p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}>
@@ -47,8 +47,8 @@ export default async function PersonajePorIdPage({ params }: any) {
       </div>
 
       <button
-        className="px-5 mx-1 mt-8 bg-transparent flex items-center p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}>
-        <a href={atras} className="text-lime font-bold" style={{textShadow: "2px 2px 2px darkgreen"}}>Atrás</a>
+        className="cursor-portal px-5 mx-1 mt-8 bg-transparent flex items-center p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}>
+        <a href={atras} className="cursor-portal text-lime font-bold" style={{textShadow: "2px 2px 2px darkgreen"}}>Atrás</a>
       </button>
     </div>
     </div>

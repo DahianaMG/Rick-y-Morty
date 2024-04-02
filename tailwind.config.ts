@@ -23,6 +23,11 @@ const config: Config = {
       },
       dropShadow: {
         's1': '2px 2px 2px rgba(0, 100, 0, 1)',
+      },
+      cursor: {
+        'oblea': "url('/cur1.png'), default",
+        'portal': "url('/cur2.png'), pointer",
+        'diosa': "url('/cur3.png'), text",
       }
     },
   },
