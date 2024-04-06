@@ -23,6 +23,7 @@ const getDashboardData = async () => {
     
     return (
       <div className="cursor-oblea bg-fondo2 bg-cover bg-center flex flex-col justify-items-stretch min-h-screen">
+        <div className='mt-2 flex flex-col items-center justify-center'><img src="/Rick_and_Morty.svg.png" width={600} height={200} alt="RickandMorty" /></div>
       <div className='grid grid-cols-3 pt-2 pb-4'>
         <div></div>
         <div className="flex justify-center text-4xl text-lime font-bold text-center" style={{textShadow: "2px 2px 2px darkgreen"}}>Personajes</div>

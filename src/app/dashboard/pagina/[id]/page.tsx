@@ -16,8 +16,14 @@ export default async function Pagina({ params }: any) {
   const data = array[0];
   const numero = Number(array[1]);
 
+  if (numero < 2)
+  return(
+    <div>error</div>
+  );
+
   return (
     <div className="cursor-oblea bg-fondo2 bg-cover bg-center flex flex-col justify-items-stretch min-h-screen">
+      <div className='mt-2 flex flex-col items-center justify-center'><img src="/Rick_and_Morty.svg.png" width={600} height={200} alt="RickandMorty" /></div>
       <div className='grid grid-cols-3 pt-2 pb-4'>
         <div></div>
         <div className="flex text-4xl justify-center text-lime font-bold text-center" style={{textShadow: "2px 2px 2px darkgreen"}}>Personajes</div>

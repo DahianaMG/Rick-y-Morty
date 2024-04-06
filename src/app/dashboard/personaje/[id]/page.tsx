@@ -47,7 +47,7 @@ export default async function PersonajePorIdPage({ params }: any) {
       </div>
 
       <button
-        className="cursor-portal px-5 mx-1 mt-8 bg-transparent flex items-center p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}>
+        className="cursor-portal px-5 mx-1 mt-8 mb-6 bg-transparent flex items-center p-3 border-2 border-solid border-lime" style={{borderRadius: "15px", backdropFilter: "blur(30px)"}}>
         <a href={atras} className="cursor-portal text-lime font-bold" style={{textShadow: "2px 2px 2px darkgreen"}}>Atrás</a>
       </button>
     </div>
