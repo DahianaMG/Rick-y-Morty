@@ -8,7 +8,11 @@ export const revalidate = 0;
 export default async function PlantasPage() {
   const supabase = createServerClient();
   const { data } = await supabase.from('plantas').select('*').order('id', { ascending: true });
-  
+  const user = await supabase.auth.getUser();
+
+  if (user.error!==null) {
+    return redirect('/');
+  }
     
     return (
       <div className="cursor-oblea bg-fondo2 bg-cover bg-center flex flex-col justify-items-stretch min-h-screen">
