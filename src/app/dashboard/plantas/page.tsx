@@ -2,7 +2,7 @@ import { PlantaCard } from '@/components/planta-card';
 import { FaHome } from "react-icons/fa";
 import { createServerClient } from '@/utils/supabase/server';
 import { redirect } from 'next/navigation';
-
+//prueba
 export const revalidate = 0;
 
 export default async function PlantasPage() {
