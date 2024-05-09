@@ -2,11 +2,9 @@
 
 import { FaUserAstronaut } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
-import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useRouter } from 'next/navigation'
 
 export const LoginForm = () => {
-  const [error, setError] = useState<string | null>(null);
   const router = useRouter();
 
   return (
@@ -17,8 +15,8 @@ export const LoginForm = () => {
 
         // get form data
         const formData = new FormData(event.currentTarget);
-        const user = formData.get('user')?.toString();
-        const password = formData.get('password')?.toString();
+        const user = formData.get('user');
+        const password = formData.get('password');
 
         const response = await fetch('/api/login', {
           method: 'POST',
@@ -30,14 +28,12 @@ export const LoginForm = () => {
 
         const data = await response.json();
 
-        if (response.ok === false) {
-          setError(data.message);
-        } else {
+        if (data.message === "Bienvenido") {
           router.push('/dashboard');
         }
       }}
     >
-      <div className="flex gap-2 border border-solid border-lime2 rounded-lg p-2">
+      <div className="flex gap-2 border border-solid border-white rounded-lg p-2">
       <FaUserAstronaut className="text-white" style={{width:"24", height:"24"}}/>
       <input
         type="text"
@@ -47,7 +43,7 @@ export const LoginForm = () => {
       />
       </div>
 
-      <div className="flex gap-2 border border-solid border-lime2 rounded-lg p-2">
+      <div className="flex gap-2 border border-solid border-white rounded-lg p-2">
       <FaLock className="text-white" style={{width:"24", height:"24"}}/>
       <input
         type="password"
@@ -63,7 +59,6 @@ export const LoginForm = () => {
       >
         Ingresar
       </button>
-      {error && <p className="text-red-500">{error}</p>}
     </form>
   );
 };
