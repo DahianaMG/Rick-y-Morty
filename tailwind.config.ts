@@ -12,11 +12,12 @@ const config: Config = {
         'primary': '#12181b',
         'secondary': '#A200FF',
         'lime': '#32CD32',
+        'lime2': '#AAFF00',
         'forest': '#1A4314',
       },
       backgroundImage: {
-        'fondo1': "url('/rickmortyfondo.png')",
-        'fondo2': "url('/rickmortyfondo2.jpg')",
+        'fondo1': "url('/plantasvszombiesfondo.png')",
+        'fondo2': "url('/plantasvszombiesfondo2.jpg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
